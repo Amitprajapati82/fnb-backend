@@ -22,7 +22,7 @@ return new class extends Migration
             $table->text('abilities')->nullable();
             $table->timestamp('last_used_at')->nullable();
             $table->timestamp('expires_at')->nullable();
-            $table->timestamps()->nullable();
+            $table->timestamps();
         });
     }
 

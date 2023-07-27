@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('role_name',100);
             $table->text('page_id');
             $table->integer('status')->nullable()->default(1)->comment('1:active,0:inactive');
-            $table->timestamps()->nullable();
+            $table->timestamps();
         });
     }
 

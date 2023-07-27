@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('qty');
             $table->text('date');
             $table->integer('status')->nullable()->default(1)->comment('1:active,0:inactive');
-            $table->timestamps()->nullable();
+            $table->timestamps();
         });
     }
 

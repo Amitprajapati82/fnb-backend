@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('log');
             $table->string('date');
             $table->integer('created_by');
-            $table->timestamps()->nullable();
+            $table->timestamps();
         });
     }
 

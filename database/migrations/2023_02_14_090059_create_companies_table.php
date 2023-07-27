@@ -26,7 +26,7 @@ return new class extends Migration
             $table->integer('created_by')->nullable();
             $table->integer('status')->nullable()->default(1)->comment('1:active,0:inactive');
             $table->integer('is_deleted')->nullable()->default(0)->comment('1:active,0:inactive');;
-            $table->timestamps()->nullable();
+            $table->timestamps();
         });
     }
 
