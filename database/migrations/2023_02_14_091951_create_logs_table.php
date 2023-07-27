@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('platform');
             $table->string('ip');
             $table->string('log');
-            $table->timestamps();
+            $table->timestamps()->nullable();
         });
     }
 
